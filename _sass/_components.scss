@@ -286,6 +286,24 @@ ul.task-list input[type="checkbox"] {
   padding-top: 1.5rem;
 }
 
+.visitor-map-card {
+  max-width: 480px;
+  margin: 0 auto;
+
+  img,
+  iframe {
+    width: 100%;
+    border: 0;
+    border-radius: 0.4rem;
+    display: block;
+  }
+}
+
+.visitor-map-note {
+  color: var(--global-text-color-light);
+  margin-bottom: 0;
+}
+
 .social.social-compact {
   text-align: left;
   margin-top: 0.75rem;
