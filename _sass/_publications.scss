@@ -82,8 +82,10 @@
         }
 
         > em {
-          border-bottom: 1px solid;
+          border-bottom: 1px dotted var(--global-theme-color);
+          color: var(--global-theme-color);
           font-style: normal;
+          font-weight: 300;
         }
 
         > span.more-authors {
