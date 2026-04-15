@@ -1,0 +1,31 @@
+{% assign visitor_map = site.visitor_map %}
+{% if visitor_map and visitor_map.enabled %}
+  <section class="visitor-map-section">
+    <div class="container">
+      {% if visitor_map.title %}
+        <h2>{{ visitor_map.title }}</h2>
+      {% endif %}
+      <div class="visitor-map-card">
+        {% if visitor_map.image_url %}
+          {% if visitor_map.link_url %}
+            <a href="{{ visitor_map.link_url }}" target="_blank" rel="noopener noreferrer">
+              <img
+                src="{{ visitor_map.image_url }}"
+                alt="{{ visitor_map.alt | default: 'Visitor map' }}"
+                class="img-fluid"
+              >
+            </a>
+          {% else %}
+            <img
+              src="{{ visitor_map.image_url }}"
+              alt="{{ visitor_map.alt | default: 'Visitor map' }}"
+              class="img-fluid"
+            >
+          {% endif %}
+        {% elsif visitor_map.note %}
+          <p class="visitor-map-note">{{ visitor_map.note }}</p>
+        {% endif %}
+      </div>
+    </div>
+  </section>
+{% endif %}

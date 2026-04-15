@@ -87,37 +87,6 @@ layout: default
       </section>
     {% endif %}
 
-    <!-- Visitor map -->
-    {% if page.visitor_map and page.visitor_map.enabled %}
-      <section class="home-section">
-        {% if page.visitor_map.title %}
-          <h2>{{ page.visitor_map.title }}</h2>
-        {% endif %}
-        <div class="visitor-map-card">
-          {% if page.visitor_map.embed_html %}
-            {{ page.visitor_map.embed_html }}
-          {% elsif page.visitor_map.image_url %}
-            {% if page.visitor_map.link_url %}
-              <a href="{{ page.visitor_map.link_url }}" target="_blank" rel="noopener noreferrer">
-                <img
-                  src="{{ page.visitor_map.image_url }}"
-                  alt="{{ page.visitor_map.alt | default: 'Visitor map' }}"
-                  class="img-fluid"
-                >
-              </a>
-            {% else %}
-              <img
-                src="{{ page.visitor_map.image_url }}"
-                alt="{{ page.visitor_map.alt | default: 'Visitor map' }}"
-                class="img-fluid"
-              >
-            {% endif %}
-          {% elsif page.visitor_map.note %}
-            <p class="visitor-map-note">{{ page.visitor_map.note }}</p>
-          {% endif %}
-        </div>
-      </section>
-    {% endif %}
     {% if site.newsletter and site.newsletter.enabled and site.footer_fixed %}
       {% include newsletter.liquid center=true %}
     {% endif %}
