@@ -14,7 +14,7 @@ ninja.data = [{
           description: "",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/cv/";
+            window.location.href = "/bio/";
           },
         },{id: "nav-publications-preprints",
           title: "Publications / Preprints",
@@ -23,12 +23,12 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/publications/";
           },
-        },{id: "nav-service",
-          title: "Service",
-          description: "Course materials, schedules, and resources for classes taught.",
+        },{id: "nav-academic-service",
+          title: "Academic Service",
+          description: "",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/teaching/";
+            window.location.href = "/service/";
           },
         },{id: "post-google-gemini-updates-flash-1-5-gemma-2-and-project-astra",
         
