@@ -13,7 +13,7 @@
 }
 
 @inproceedings{srey-etal-2026-learning,
-    title = {Learning Uncertainty from Internal Dispersion},
+    title = {Learning Uncertainty from Sequential Internal Dispersion in Large Language Models},
     author = {Srey, Ponhvoan  and
       Wu, Xiaobao  and
       Nguyen, Cong-Duy  and
@@ -21,6 +21,7 @@
     booktitle = {Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics},
     month = {July},
     year = {2026},
+    url = {https://arxiv.org/abs/2604.15741},
     publisher = {Association for Computational Linguistics},
     code = {https://github.com/ponhvoan/internal-variance},
     abstract = {Uncertainty estimation is a promising approach to detect hallucinations in large language models (LLMs). Recent approaches commonly depend on model internal states to estimate uncertainty. However, they suffer from strict assumptions on how hidden states should evolve across layers, and from information loss by solely focusing on last or mean token. To address these issues, we present Sequential Internal Variance Representation (SIVR), a supervised hallucination detection framework that leverages token-wise, layer-wise features derived from hidden states. SIVR adopts a more basic assumption that uncertainty manifests in the degree of dispersion or variance of internal representations across layers, rather than relying on specific assumptions, which makes the method model and task agnostic. It additionally aggregates the full sequence of per-token variance features, learning temporal patterns indicative of factual error and thereby preventing information loss. Experimental results demonstrate SIVR consistently outperforms strong baselines. Most importantly, SIVR enjoys stronger generalisation and avoids relying on large training sets, highlighting the potential for practical deployment.},
