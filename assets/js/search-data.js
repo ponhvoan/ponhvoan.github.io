@@ -55,8 +55,8 @@ ninja.data = [{
       },{id: "news-our-paper-unsupervised-hallucination-detection-by-inspecting-reasoning-processes-was-accepted-at-emnlp-2025-main-conference-tada-tada-tada",
           title: 'Our paper Unsupervised Hallucination Detection by Inspecting Reasoning Processes was accepted at EMNLP...',
           description: "",
-          section: "News",},{id: "news-our-paper-learning-uncertainty-from-internal-dispersion-was-accepted-at-acl-2026-main-conference-tada-tada-tada",
-          title: 'Our paper Learning Uncertainty from Internal Dispersion was accepted at ACL 2026 main...',
+          section: "News",},{id: "news-our-paper-learning-uncertainty-from-sequential-internal-dispersion-in-large-language-models-was-accepted-at-acl-2026-main-conference-tada-tada-tada",
+          title: 'Our paper Learning Uncertainty from Sequential Internal Dispersion in Large Language Models was...',
           description: "",
           section: "News",},{
         id: 'social-email',
