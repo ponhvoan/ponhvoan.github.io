@@ -1,12 +1,16 @@
 metadata:
-  last_updated: '2026-04-17'
+  last_updated: '2026-04-29'
 papers:
   R8XfzK0AAAAJ:9yKSN-GCB0IC:
     citations: 1
     title: Open-world learning under dataset shift
     year: '2024'
-  R8XfzK0AAAAJ:UeHWp8X0CEIC:
+  R8XfzK0AAAAJ:IjCSPb-OGe4C:
     citations: 0
+    title: Learning Uncertainty from Sequential Internal Dispersion in Large Language Models
+    year: '2026'
+  R8XfzK0AAAAJ:UeHWp8X0CEIC:
+    citations: 1
     title: Towards Reliable Truth-Aligned Uncertainty Estimation in Large Language Models
     year: '2026'
   R8XfzK0AAAAJ:d1gkVwhDpl0C:
@@ -14,6 +18,6 @@ papers:
     title: 'Uncover and unlearn nuisances: agnostic fully test-time adaptation'
     year: '2025'
   R8XfzK0AAAAJ:u-x6o8ySG0sC:
-    citations: 1
+    citations: 2
     title: Unsupervised Hallucination Detection by Inspecting Reasoning Processes
     year: '2025'
