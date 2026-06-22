@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-06-01'
+  last_updated: '2026-06-22'
 papers:
   R8XfzK0AAAAJ:9yKSN-GCB0IC:
     citations: 1
@@ -18,6 +18,6 @@ papers:
     title: 'Uncover and unlearn nuisances: agnostic fully test-time adaptation'
     year: '2025'
   R8XfzK0AAAAJ:u-x6o8ySG0sC:
-    citations: 2
+    citations: 3
     title: Unsupervised Hallucination Detection by Inspecting Reasoning Processes
     year: '2025'
