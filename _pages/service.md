@@ -83,6 +83,12 @@ _styles: |
 
 <div class="service-card">
   <section class="service-group">
+    <h2 class="service-group-title">PC Member / Reviewer</h2>
+    <ul class="service-list">
+      <li class="service-item"><span class="service-item-main">NeurIPS 2026</span></li>
+    </ul>
+  </section>
+  <section class="service-group">
     <h2 class="service-group-title">Journal Reviewer</h2>
     <ul class="service-list">
       <li class="service-item"><span class="service-item-main">Journal of Artificial Intelligence Research</span></li>
