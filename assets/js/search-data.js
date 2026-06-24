@@ -58,6 +58,9 @@ ninja.data = [{
           section: "News",},{id: "news-our-paper-learning-uncertainty-from-sequential-internal-dispersion-in-large-language-models-was-accepted-at-acl-2026-main-conference-tada-tada-tada",
           title: 'Our paper Learning Uncertainty from Sequential Internal Dispersion in Large Language Models was...',
           description: "",
+          section: "News",},{id: "news-i-passed-my-phd-qualifying-examination-qe-at-ntu",
+          title: 'I passed my PhD Qualifying Examination (QE) at NTU!',
+          description: "",
           section: "News",},{
         id: 'social-email',
         title: 'email',
