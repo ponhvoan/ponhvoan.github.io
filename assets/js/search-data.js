@@ -55,11 +55,17 @@ ninja.data = [{
       },{id: "news-our-paper-unsupervised-hallucination-detection-by-inspecting-reasoning-processes-was-accepted-at-emnlp-2025-main-conference-tada-tada-tada",
           title: 'Our paper Unsupervised Hallucination Detection by Inspecting Reasoning Processes was accepted at EMNLP...',
           description: "",
+          section: "News",},{id: "news-page-facing-up-new-preprint-towards-reliable-truth-aligned-uncertainty-estimation-in-large-language-models",
+          title: ':page_facing_up: New Preprint: Towards Reliable Truth-Aligned Uncertainty Estimation in Large Language Models',
+          description: "",
           section: "News",},{id: "news-our-paper-learning-uncertainty-from-sequential-internal-dispersion-in-large-language-models-was-accepted-at-acl-2026-main-conference-tada-tada-tada",
           title: 'Our paper Learning Uncertainty from Sequential Internal Dispersion in Large Language Models was...',
           description: "",
           section: "News",},{id: "news-i-passed-my-phd-qualifying-examination-qe-at-ntu",
           title: 'I passed my PhD Qualifying Examination (QE) at NTU!',
+          description: "",
+          section: "News",},{id: "news-page-facing-up-new-preprint-from-signals-to-transfer-a-factorised-study-of-probe-based-uncertainty-estimation-in-large-language-models",
+          title: ':page_facing_up: New Preprint: From Signals to Transfer: A Factorised Study of Probe-Based Uncertainty...',
           description: "",
           section: "News",},{
         id: 'social-email',
@@ -81,6 +87,13 @@ ninja.data = [{
         section: 'Socials',
         handler: () => {
           window.open("https://github.com/ponhvoan", "_blank");
+        },
+      },{
+        id: 'social-linkedin',
+        title: 'LinkedIn',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://www.linkedin.com/in/ponhvoan-srey", "_blank");
         },
       },{
       id: 'light-theme',
