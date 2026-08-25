@@ -3,13 +3,15 @@
     {% assign news_size = site.news | size %}
     <div
       class="table-responsive"
-      {% if include.limit and page.announcements.scrollable and news_size > 3 %}
-        style="max-height: 60vw"
+      {% if include.limit and page.announcements.scrollable and page.announcements.limit and news_size > page.announcements.limit %}
+        data-visible-items="{{ page.announcements.limit }}"
+        aria-label="News; scroll for older items"
+        tabindex="0"
       {% endif %}
     >
       <table class="table table-sm table-borderless">
         {% assign news = site.news | reverse %}
-        {% if include.limit and page.announcements.limit %}
+        {% if include.limit and page.announcements.limit and page.announcements.scrollable != true %}
           {% assign news_limit = page.announcements.limit %}
         {% else %}
           {% assign news_limit = news_size %}

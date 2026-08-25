@@ -17,6 +17,27 @@ $(document).ready(function () {
   });
   $("a").removeClass("waves-effect waves-light");
 
+  // Keep all news items available while sizing scrollable lists to the
+  // configured number of visible rows. Measuring the rows accounts for
+  // announcements that wrap onto multiple lines.
+  $(".news .table-responsive[data-visible-items]").each(function () {
+    const container = this;
+    const visibleItems = Number.parseInt(container.dataset.visibleItems, 10);
+    const rows = Array.from(container.querySelectorAll("tr"));
+
+    if (!Number.isInteger(visibleItems) || visibleItems < 1 || rows.length <= visibleItems) return;
+
+    const sizeNewsContainer = () => {
+      container.style.overflowY = "scroll";
+      container.style.maxHeight = "none";
+      const visibleHeight = rows.slice(0, visibleItems).reduce((height, row) => height + row.getBoundingClientRect().height, 0);
+      container.style.maxHeight = `${Math.ceil(visibleHeight)}px`;
+    };
+
+    sizeNewsContainer();
+    window.addEventListener("resize", sizeNewsContainer);
+  });
+
   // bootstrap-toc
   if ($("#toc-sidebar").length) {
     // remove related publications years from the TOC

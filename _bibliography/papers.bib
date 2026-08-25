@@ -1,6 +1,17 @@
 ---
 ---
 
+@article{vo2026tiger,
+  title={TIGER: Text-Conditioned Visual Gated Routing with Acceptance Alignment for Multimodal Speculative Decoding},
+  author={Vo, Quynh and Nguyen, Cong-Duy and Srey, Ponhvoan and Tuan, Luu Anh and Nguyen, Thong},
+  journal={arXiv preprint arXiv:2607.11131},
+  year={2026},
+  url={https://arxiv.org/abs/2607.11131},
+  abstract={Speculative decoding accelerates autoregressive generation by letting a lightweight drafter propose multiple tokens that are verified by a larger target model. Although effective for text-only LLMs, speculative decoding yields limited gains in VLMs because drafters often diverge on vision-critical content, while existing multimodal acceleration methods do not directly address irrelevant visual evidence or optimize the verifier-accepted prefix length that governs speedup. We propose TIGER, a Text-conditioned vIsual GatEd Routing framework for multimodal speculative decoding. TIGER dynamically selects a sparse set of context-relevant visual tokens based on the drafter's current textual state, rather than expose the full visual token set or a fixed compressed interface. To better align training with inference-time efficiency, we optimize the drafter with acceptance-aligned group-based policy training using verifier-derived rewards based on accepted prefix length, built on top of distillation warm start with KL anchoring. This encourages the drafter not only to imitate the target model, but also to produce speculative continuations that survive verification for longer prefixes. Experiments show that TIGER yields consistent gains in accepted prefix length and speculative speedup under exact verifier-side speculative decoding, while achieving favorable quality-latency trade-offs with comparable downstream accuracy in visual-routing analyses.},
+  abbr={preprint},
+  bibtex_show={true}
+}
+
 @article{srey2026probe,
   title={From Signals to Transfer: A Factorised Study of Probe-Based Uncertainty Estimation in Large Language Models},
   author={Srey, Ponhvoan and Wu, Xiaobao and Nguyen, Cong-Duy and Nguyen, Quang Minh and Vu, Duc Anh and Luu, Anh Tuan},
@@ -13,16 +24,28 @@
   bibtex_show = {true}
 }
 
-@article{srey2026towards,
+@inproceedings{anh2026reinforcing,
+  title={Reinforcing Step-level Reasoning for Effective Self-Correction in LLMs},
+  author={Anh, Vu Duc and Hoang, Nhat M and Long, Do Xuan and Nguyen, Cong-Duy and Srey, Ponhvoan and Tuan, Luu Anh},
+  booktitle={Findings of the Association for Computational Linguistics: EMNLP 2026},
+  year={2026},
+  url={https://arxiv.org/abs/2608.11573},
+  abstract={Achieving effective self-correction, where models verify and correct their own mistakes, remains a fundamental challenge for large language models (LLMs). In this work, we propose Self-Fix Step-DPO (SFS-DPO), a reinforcement learning based, two-stage framework for step-level self-verification and self-correction. The first stage strengthens step-level reasoning via step-level preference optimization, while the second stage explicitly trains models to self-verify and self-correct. We further introduce a teacher-assisted variant, SFS-DPO-R, which incorporates explanatory rationales for error verification to provide stronger corrective signals. Comprehensive in-domain and out-of-domain evaluations across multiple LLMs demonstrate that SFS-DPO and SFS-DPO-R consistently outperform prior step-level training baselines. Our analysis further reveals improvements in self-correction frequency and effectiveness, highlighting the importance of strengthening step-level reasoning for robust performance.},
+  abbr={EMNLP Findings},
+  bibtex_show = {true},
+}
+
+@inproceedings{srey2026towards,
   title={Towards Reliable Truth-Aligned Uncertainty Estimation in Large Language Models},
   author={Srey, Ponhvoan and Nguyen, Quang Minh and Wu, Xiaobao and Luu, Anh Tuan},
-  journal={arXiv preprint arXiv:2604.00445},
+  booktitle={Findings of the Association for Computational Linguistics: EMNLP},
   year={2026},
   url={https://arxiv.org/abs/2604.00445},
   code={https://github.com/ponhvoan/TruthAnchor/},
-  abstract={Uncertainty estimation (UE) aims to detect hallucinated outputs of large language models (LLMs) to improve their reliability. However, UE metrics often exhibit unstable performance across configurations, which significantly limits their applicability. In this work, we formalise this phenomenon as proxy failure, since most UE metrics originate from model behaviour, rather than being explicitly grounded in the factual correctness of LLM outputs. With this, we show that UE metrics become non-discriminative precisely in low-information regimes. To alleviate this, we propose Truth AnChoring (TAC), a post-hoc calibration method to remedy UE metrics, by mapping the raw scores to truth-aligned scores. Even with noisy and few-shot supervision, our TAC can support the learning of well-calibrated uncertainty estimates, and presents a practical calibration protocol. Our findings highlight the limitations of treating heuristic UE metrics as direct indicators of truth uncertainty, and position our TAC as a necessary step toward more reliable uncertainty estimation for LLMs.},
-  abbr={preprint},
-  bibtex_show = {true}
+  abstract={Uncertainty estimation (UE) quantifies uncertainty in large language models (LLM) outputs to flag potential hallucinations and support reliable deployment. However, UE metrics often exhibit unstable performance across models and datasets, limiting their practical utility. We formalise this phenomenon as \emph{proxy failure}, arising because UE metrics are derived from model behaviour rather than being explicitly grounded in factual correctness. We show that low mutual information between a UE score and correctness necessarily constrains its discriminability to near chance. To address this, we propose \emph{Truth AnChoring} (TAC), a lightweight post-hoc calibration method that maps raw UE scores to truth-aligned correctness probabilities. Even with noisy and few-shot supervision, our TAC can support the learning of well-calibrated uncertainty estimates, and presents a practical calibration protocol. Our findings highlight the limitations of treating heuristic UE metrics as direct indicators of uncertainty about factual correctness, and position our TAC as a principled step toward more reliable uncertainty estimation for LLMs.},
+  abbr={EMNLP Findings},
+  bibtex_show = {true},
+  selected = {true}
 }
 
 @inproceedings{srey-etal-2026-learning,
