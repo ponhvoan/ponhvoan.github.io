@@ -67,6 +67,9 @@ ninja.data = [{
           section: "News",},{id: "news-page-facing-up-new-preprint-from-signals-to-transfer-a-factorised-study-of-probe-based-uncertainty-estimation-in-large-language-models",
           title: ':page_facing_up: New Preprint: From Signals to Transfer: A Factorised Study of Probe-Based Uncertainty...',
           description: "",
+          section: "News",},{id: "news-two-papers-accepted-to-emnlp-findings-2026-tada-tada-one-first-author-on-aligning-uncertainty-estimates-with-factuality-and-one-on-inducing-effective-self-correction-via-rl-congrats-anh-clinking-glasses",
+          title: 'Two papers accepted to EMNLP Findings 2026 :tada: :tada:: one first-author on aligning...',
+          description: "",
           section: "News",},{
         id: 'social-email',
         title: 'email',
