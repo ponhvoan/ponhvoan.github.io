@@ -70,6 +70,9 @@ ninja.data = [{
           section: "News",},{id: "news-two-papers-accepted-to-emnlp-findings-2026-tada-tada-one-first-author-on-aligning-uncertainty-estimates-with-factuality-and-one-on-inducing-effective-self-correction-via-rl-congrats-anh-clinking-glasses",
           title: 'Two papers accepted to EMNLP Findings 2026 :tada: :tada:: one first-author on aligning...',
           description: "",
+          section: "News",},{id: "news-recognised-as-a-top-reviewer-at-neurips-2026",
+          title: 'Recognised as a Top Reviewer at NeurIPS 2026!',
+          description: "",
           section: "News",},{
         id: 'social-email',
         title: 'email',
