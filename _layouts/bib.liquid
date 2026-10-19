@@ -116,6 +116,8 @@
           {% endunless %}
         {%- endfor -%}
         {%- assign more_authors_show = more_authors_show | regex_replace: '([*∗†‡§¶‖&^]+)', '<sup>\1</sup>' -%}
+        {%- assign more_authors_show = more_authors_show
+          | replace: 'Ponhvoan Srey', '<em>Ponhvoan Srey</em>' -%}
         , and
         <span
           class="more-authors"
